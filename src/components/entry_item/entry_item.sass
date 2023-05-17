@@ -1,0 +1,15 @@
+.entry_item
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 1vh .3vw 1vh 0.1vw
+    border-radius: 5px
+    color: white
+    .entry_link
+        opacity: .9
+        font-size: calc(var(--index) * 1)
+        transition: calc( var(--transition) * .5 )
+.entry_item:hover
+    .entry_link
+        color: black
+        transition: calc( var(--transition) * 3 )

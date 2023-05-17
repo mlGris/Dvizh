@@ -1,0 +1,54 @@
+.header
+    .nav_container
+        display: block
+        width: 100vw
+        height: var(--header-height)
+        .nav_menu
+            display: flex
+            justify-content: center
+            align-items: center
+            text-align: center
+            font-size: calc(var(--index) * .9)
+            height: 100%
+            .company_name
+                flex-basis: 35%
+                .brand
+                    letter-spacing: 2.5vh
+                    font-size: calc(var(--index) * 1.5)
+                    font-weight: 250
+                    text-align: center
+                    opacity: .8
+            .nav_item
+                flex-basis: 20%
+                padding: .5vh 0
+                opacity: .8
+                text-transform: uppercase
+                text-decoration: none
+                position: relative
+            .nav_item::after
+                content: ""
+                position: absolute
+                bottom: 0
+                left: 50%
+                display: block
+                background: none repeat scroll 0 0 transparent
+                height: .3vh
+                width: 0
+                background: rgba(0, 0, 0,.8)
+                transition: 1s ease 0s
+            .nav_item:hover::after
+                width: 76% 
+                left: 12%  
+            .nav_active::after
+                width: 76% 
+                left: 12%  
+            .entry_menu
+                flex-basis: 5%
+                display: flex
+                justify-content: right
+                align-items: center
+                margin: 0 .2vw 0 0
+        
+            
+            
+            

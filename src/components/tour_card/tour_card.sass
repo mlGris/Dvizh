@@ -1,0 +1,65 @@
+.card_item
+    display: block
+    width: calc( (100% / 2) - (var(--gap) * .5))
+    height: calc( 50% - (var(--gap) * .5))
+    border-radius: 10px
+    transform: scale(1.001)
+    padding-top: 29.5vh
+    background-repeat: no-repeat, no-repeat
+    background-size: cover
+    transition: var(--transition)
+    color: white
+    position: relative
+    p
+        display: block
+        position: absolute
+        opacity: .8
+        left: 0
+        right: 0
+        margin-left: auto
+        margin-right: auto
+        text-align: center
+        font-size: calc(var(--index) * .8)
+    .num_persons
+        bottom: 7.5vh
+        letter-spacing: 0.2vw
+        font-weight: 600
+        transition: var(--transition)
+    .date_tour
+        bottom: 1vh
+        letter-spacing: 0.15vw
+        font-weight: 600
+        transition: var(--transition)
+    .tour_description
+        overflow: auto
+        display: block
+        padding-top: 4vh
+        height: 100%
+        background-color: rgb(0,0,0,.6)
+        border-radius: 0 0 10px 10px
+        text-align: center
+        transition: var(--transition)
+        h2 
+            letter-spacing: 0.5vw
+            font-size: calc(var(--index) * .8)
+            font-weight: 800
+            opacity: .8
+            transition: var(--transition)
+           
+.card_item:hover
+    padding: 0
+    .num_persons
+        bottom: 13.5vh
+        font-size: calc(var(--index) * 1)
+        opacity: 1
+    .date_tour
+        bottom: 22.7vh
+        font-size: calc(var(--index) * .85)
+        opacity: 1
+    .tour_description
+        background-color: rgba(0, 0, 0, .4)
+        border-radius: 10px
+        padding-top: 19vh
+        h2
+            font-size: calc(var(--index) * .95)
+            opacity: 1
