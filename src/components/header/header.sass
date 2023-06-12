@@ -3,6 +3,7 @@
         display: block
         width: 100vw
         height: var(--header-height)
+        background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, .04))
         .nav_menu
             display: flex
             justify-content: center
@@ -18,36 +19,6 @@
                     font-weight: 250
                     text-align: center
                     opacity: .8
-            .nav_item
-                flex-basis: 20%
-                padding: .5vh 0
-                opacity: .8
-                text-transform: uppercase
-                text-decoration: none
-                position: relative
-            .nav_item::after
-                content: ""
-                position: absolute
-                bottom: 0
-                left: 50%
-                display: block
-                background: none repeat scroll 0 0 transparent
-                height: .3vh
-                width: 0
-                background: rgba(0, 0, 0,.8)
-                transition: 1s ease 0s
-            .nav_item:hover::after
-                width: 76% 
-                left: 12%  
-            .nav_active::after
-                width: 76% 
-                left: 12%  
-            .entry_menu
-                flex-basis: 5%
-                display: flex
-                justify-content: right
-                align-items: center
-                margin: 0 .2vw 0 0
         
             
             

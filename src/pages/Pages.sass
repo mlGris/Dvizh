@@ -1,0 +1,86 @@
+// General style
+.tours_user_page, .admin_page, .tours_base_page, .client_base_page, .report_base
+    width: 100vw
+    height: calc(100vh - var(--header-height) - var(--footer-height))
+    display: flex
+
+// Tour user page style
+.tours_user_page
+    padding: calc(var(--gap) * .5)
+    flex-wrap: wrap
+    justify-content: space-between
+    .tour_card_container
+        overflow: auto
+        flex-basis: calc( (100% - var(--gap)) / 7 * 3)
+        width: calc( 50% - (var(--gap) * .5))
+        height: 100%
+        gap: var(--gap)
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-evenly
+    .all_cards
+        flex-basis: calc( 100% )
+        width: calc( ( 100% / 4) - (var(--gap) * 1))
+
+// Admin page style
+.admin_page
+    justify-content: space-evenly
+    align-items: center
+    .admin_nav_item
+        flex-basis: calc( 100% / 3.75)
+        height: calc((100vh - var(--header-height) - var(--footer-height)) * .75)
+        border-radius: 10px
+        background: gray
+        transition: 1s
+    .admin_nav_item:hover
+        transform: scale(1.15)
+        transition: 1s
+
+// Tour base page style
+.tours_base_page
+    align-items: center
+    justify-content: center
+    flex-flow: column wrap
+    text-align: center
+    font-size: calc( var(--index) * .8 )
+    .tours_name_list
+        width: calc((100vw - var(--gap) * 2) / 3)
+        flex-basis: 5%
+        background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.8))
+        border-radius: 1vh 1vh 0 0
+        font-size: calc( var(--index) * .9)
+        color: white
+    .all_tours
+        width: calc((100vw - var(--gap) * 2) / 3)
+        overflow: auto
+        position: relative
+        flex-basis: calc( 92% )
+        border-radius: 0 0 1vh 1vh
+
+// Client base page style
+.client_base_page
+    padding: 1vh
+    overflow: auto
+    flex-wrap: wrap
+    gap: calc( var(--gap) * .5)
+
+// Report base page style
+.report_base
+    padding: 1vh
+    flex-flow: column nowrap
+    .report_base_names
+        display: flex
+        justify-content: center
+        text-align: center
+        p
+            flex-basis: calc( 98% / 6 )
+            font-size: calc( var(--index) * .8 )
+            background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.8))
+            padding: .3vh
+            color: white
+        p:nth-child(1)
+            border-radius: 1vh 0 0 0
+            flex-basis: 2%
+        p:nth-last-child(1)
+            border-radius: 0 1vh 0 0
+

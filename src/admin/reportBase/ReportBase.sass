@@ -1,0 +1,13 @@
+.report_base_card
+    display: flex
+    overflow: auto
+    text-align: center
+    p
+        flex-basis: calc( 98% / 6 )
+        font-size: calc( var(--index) * .8 )
+        padding: .3vh
+    p:nth-child(1)
+        flex-basis: 2%
+
+.report_base_card:nth-child(even)
+    background: rgb(230, 230, 230)
